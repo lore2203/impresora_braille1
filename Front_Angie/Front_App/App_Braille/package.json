@@ -1,0 +1,25 @@
+{
+  "name": "app_braille",
+  "version": "1.0.0",
+  "description": "Aplicación de escritorio en electron. Traductor de lenguage natural a Braille",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lore2203/impresora_braille1.git"
+  },
+  "keywords": [
+    "Braille",
+    "Electron",
+    "Traductor",
+    "Interfaz"
+  ],
+  "author": "Angie Cardenas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lore2203/impresora_braille1/issues"
+  },
+  "homepage": "https://github.com/lore2203/impresora_braille1#readme"
+}
