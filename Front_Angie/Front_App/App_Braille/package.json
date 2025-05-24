@@ -4,7 +4,7 @@
   "description": "Aplicación de escritorio en electron. Traductor de lenguage natural a Braille",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron."
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/lore2203/impresora_braille1/issues"
   },
-  "homepage": "https://github.com/lore2203/impresora_braille1#readme"
+  "homepage": "https://github.com/lore2203/impresora_braille1#readme",
+  "devDependencies": {
+    "electron": "^36.3.1"
+  }
 }
