@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #4a6fa5; 
+    box-sizing: border-box; 
+}
+
+.container {
+    background-color: #d3d3d3; /* Light grey for the main content area */
+    border: 10px solid #4a6fa5; /* Darker blue border */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Adjust as needed */
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between major sections */
+}
+
+
+.container-inner {
+  padding: 20px; /* Aquí va el espacio interno */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%; /* Asegura que ocupe el contenedor completo */
+  box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 2em;
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+}
+
+p {
+    color: #000000;
+    font-size: 1em;
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+}
+
+.file-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.file-input-group {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between button and text */
+}
+
+#uploadButton {
+    background-color: #b0b0b0; /* Grey button color */
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#uploadButton:hover {
+    background-color: #a0a0a0;
+}
+
+#fileName {
+    color: #555;
+    font-style: italic;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between; /* Pushes buttons to the ends */
+    margin-top: 20px;
+}
+
+#translateButton,
+#printButton {
+    background-color: #6a8ec2; /* Blue button color */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#translateButton:hover,
+#printButton:hover {
+    background-color: #5a7bb0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Caja del modal */
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 30px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  font-size: 1.1em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Botones del modal */
+.modal-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal-buttons button {
+  padding: 10px 25px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+#confirmYes {
+  background-color: #4CAF50;
+}
+
+#confirmNo {
+  background-color: #f44336;
+}
+
+.text-areas {
+    display: flex;
+    gap: 20px; /* Slightly separated containers */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center items when wrapped */
+}
+
+.text-area-group {
+    flex: 1; /* Allows the text areas to grow and shrink */
+    min-width: 300px; /* Minimum width for each text area */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 250px; /* Fixed height for the text areas */
+    border: 1px solid #5ead30;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1em;
+    resize: vertical; /* Allow vertical resizing, but not horizontal */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background-color: #f8f8f8; /* Light background for text areas */
+}

@@ -11,34 +11,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <title>App Trductor Braille</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="app-container">
-        <h1>Trductor Braille</h1>
-
-        <div class="file-input">
-            <label for="fileUpload">Seleccionar archivo PDF:</label>
-            <input type="file" id="fileUpload" accept=".pdf" />
+   <div class="container">
+    <div class="container-inner">
+        <div class="header">
+            <h1>Traductor Braille</h1>
         </div>
 
-        <div class="buttons">
-            <button id="translateBtn">Traducir</button>
-            <button id="printBtn">Imprimir</button>
-        </div>   
-
-        <div class="preview-container">
-            <div class="preview">
-                <h2>Texto Original</h2>
-                <textarea id="originalText" readonly></textarea>
+        <div class="file-selection">
+            <p>Seleccione archivo PDF</p>
+            <div class="file-input-group">
+                <input type="file" id="pdfFile" accept=".pdf" style="display: none;">
+                <button id="uploadButton">Subir archivo</button>
+                <span id="fileName">No hay ningún archivo seleccionado</span>
             </div>
+        </div>
 
-            <div class="preview">
-                <h2>Texto Original</h2>
-                <textarea id="originalText" readonly></textarea>
+        <div class="actions">
+            <button id="translateButton">Traducir</button>
+            <button id="printButton">Imprimir</button>
+        </div>
+
+        <div id="customModal" class="modal">
+  <div class="modal-content">
+    <p>¿Estás seguro de que quiere completar esta acción?</p>
+    <div class="modal-buttons">
+      <button id="confirmYes">sí</button>
+      <button id="confirmNo">no</button>
+    </div>
+  </div>
+</div>
+
+        <div class="text-areas">
+            <div class="text-area-group">
+                <p>Texto Braille</p>
+                <textarea id="brailleText" readonly></textarea>
             </div>
         </div>
     </div>
+</div>
 
          <script src="renderer.js"></script>
 </body>
