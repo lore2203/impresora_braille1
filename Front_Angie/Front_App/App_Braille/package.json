@@ -4,7 +4,7 @@
   "description": "Aplicación de escritorio en electron. Traductor de lenguage natural a Braille",
   "main": "main.js",
   "scripts": {
-    "start": "electron."
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
