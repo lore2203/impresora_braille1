@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta http-equiv=" X-content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Document</title>
+    <title>App Trductor Braille</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <div class="app-container">
+        <h1>Trductor Braille</h1>
+
+    <div class="file-input">
+      <label for="fileUpload">Seleccionar archivo PDF:</label>
+      <input type="file" id="fileUpload" accept=".pdf" />
+    </div>
+
+    <div class="buttons">
+        <button id="translateBtn">Traducir</button>
+        <button id="printBtn">Imprimir</button>
+    </div>   
+
+
     
+         <script src="renderer.js"></script>
 </body>
 </html>
